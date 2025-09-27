@@ -256,7 +256,6 @@
   .card-category {
     display: inline-block;
     background: rgba(26, 188, 156, 0.1);
-    color: var(--primary-color);
     padding: 0.25rem 0.75rem;
     border-radius: 50px;
     font-size: 0.75rem;
