@@ -28,19 +28,10 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.php [QSA,L]
 
 # Cache statique (CSS, JS, images)
-<IfModule mod_expires.c>
-    ExpiresActive On
-    ExpiresByType image/jpg "access plus 1 month"
-    ExpiresByType image/jpeg "access plus 1 month"
-    ExpiresByType image/png "access plus 1 month"
-    ExpiresByType image/gif "access plus 1 month"
-    ExpiresByType image/webp "access plus 1 month"
-    ExpiresByType text/css "access plus 1 week"
-    ExpiresByType application/javascript "access plus 1 week"
-    ExpiresByType text/javascript "access plus 1 week"
-    ExpiresByType application/font-woff2 "access plus 1 year"
-    ExpiresDefault "access plus 2 days"
-</IfModule>
+<FilesMatch "\.(html|css|js|png|jpg|jpeg|gif|svg)$">
+    Header set Cache-Control "max-age=2629800, public"
+</FilesMatch>
+
 
 # Bloque les requêtes avec certains caractères dangereux
 SetEnvIf Request_URI "(\.php\?|\.\.\/|\~|\'|\<|\>|\<script|eval\()" bad_request
