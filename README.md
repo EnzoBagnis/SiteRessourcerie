@@ -1,8 +1,8 @@
-# Les Trouvailles de Vitrolles - Application PHP MVC
+# Les Trésors de Vitrolles - Application PHP MVC
 
 ## Description
 
-Les Trouvailles de Vitrolles est une application web de ressourcerie développée en PHP avec une architecture MVC bien structurée. L'application permet de gérer une boutique en ligne spécialisée dans les objets de seconde main, reconditionnés et upcyclés, dans l'esprit de l'économie circulaire.
+Les Trésors de Vitrolles est une application web de ressourcerie développée en PHP avec une architecture MVC bien structurée. L'application permet de gérer une boutique en ligne spécialisée dans les objets de seconde main, reconditionnés et upcyclés, dans l'esprit de l'économie circulaire.
 
 ## Fonctionnalités
 
@@ -141,4 +141,4 @@ Pour toute question ou amélioration, consulter la documentation dans le code so
 
 ---
 
-**Les Trouvailles de Vitrolles** - Développé avec ❤️ pour l'économie circulaire
+**Les Trésors de Vitrolles** - Développé avec ❤️ pour l'économie circulaire

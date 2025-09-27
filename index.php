@@ -1,6 +1,6 @@
 <?php
 /**
- * Point d'entrée principal de l'application Les Trouvailles de Vitrolles
+ * Point d'entrée principal de l'application Les Trésors de Vitrolles
  * Architecture MVC - Routeur principal
  */
 

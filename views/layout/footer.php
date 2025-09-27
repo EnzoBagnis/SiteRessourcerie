@@ -44,7 +44,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; <?php echo date('Y'); ?> Les trouvailles de Vitrolles. Tous droits réservés.</p>
+                <p>&copy; <?php echo date('Y'); ?> Les Trésors de Vitrolles. Tous droits réservés.</p>
                 <div>
                     <a href="#">Mentions légales</a> |
                     <a href="#">Politique de confidentialité</a>
