@@ -31,7 +31,7 @@
                 <a href="/" class="logo">
                     <div class="logo-icon">🍃</div>
                     <div class="logo-text">
-                        <h1>Les Trouvailles de Vitrolles</h1>
+                        <h1>Les Trésors de Vitrolles</h1>
                         <p>Réemploi & Économie Circulaire</p>
                     </div>
                 </a>

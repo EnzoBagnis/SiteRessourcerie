@@ -8,7 +8,7 @@
                     <h3>Nous contacter</h3>
                     <p>📍 123 Rue de l'Économie Circulaire<br>75000 Paris</p>
                     <p>📞 01 23 45 67 89</p>
-                    <p>✉️ contact@Les-trouvailles-de-Vitrolles.fr</p>
+                    <p>✉️ contact@Les-trésors-de-Vitrolles.fr</p>
                 </div>
 
                 <!-- Horaires -->
