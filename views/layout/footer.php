@@ -41,6 +41,11 @@
                         <a href="#" class="social-link" aria-label="Twitter">🐦</a>
                     </div>
                 </div>
+
+                <div>
+                    <div id="ecoindex-badge"></div>
+                    <script src="https://cdn.jsdelivr.net/gh/cnumr/ecoindex_badge@3/assets/js/ecoindex-badge.js" defer></script>
+                </div>
             </div>
 
             <div class="footer-bottom">
