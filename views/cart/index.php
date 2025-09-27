@@ -14,7 +14,7 @@
             <div style="font-size: 4rem; margin-bottom: 1rem;">🛒</div>
             <h2>Votre panier est vide</h2>
             <p style="margin-bottom: 2rem;">Découvrez notre sélection de produits reconditionnés</p>
-            <a href="?page=shop" class="btn">Continuer mes achats</a>
+            <a href="/shop" class="btn">Continuer mes achats</a>
         </div>
         <?php else: ?>
         <!-- Cart Content -->
@@ -36,7 +36,7 @@
                     <div class="cart-item-controls">
                         <!-- Quantity Controls -->
                         <div class="quantity-controls">
-                            <form method="post" action=" ?page=cart&action=update" style="display: inline;">
+                            <form method="post" action="/cart?action=update" style="display: inline;">
                                 <input type="hidden" name="product_id" value="<?php echo $productId; ?>">
                                 <input type="hidden" name="quantity" value="<?php echo $item['quantity'] - 1; ?>">
                                 <button type="submit" class="quantity-btn">➖</button>
@@ -44,7 +44,7 @@
                             
                             <span style="min-width: 30px; text-align: center;"><?php echo $item['quantity']; ?></span>
                             
-                            <form method="post" action=" ?page=cart&action=update" style="display: inline;">
+                            <form method="post" action="/cart?action=update" style="display: inline;">
                                 <input type="hidden" name="product_id" value="<?php echo $productId; ?>">
                                 <input type="hidden" name="quantity" value="<?php echo $item['quantity'] + 1; ?>">
                                 <button type="submit" class="quantity-btn">➕</button>
@@ -58,7 +58,7 @@
                         </div>
                         
                         <!-- Remove Button -->
-                        <form method="post" action=" ?page=cart&action=remove" style="display: inline;">
+                        <form method="post" action="/cart?action=remove" style="display: inline;">
                             <input type="hidden" name="product_id" value="<?php echo $productId; ?>">
                             <button type="submit" class="quantity-btn" style="color: #e74c3c;" 
                                     onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet article ?')">
@@ -93,11 +93,11 @@
                 <div style="display: flex; flex-direction: column; gap: 0.75rem;">
                     <button class="btn" style="width: 100%;">Passer commande</button>
                     
-                    <a href="?page=shop" class="btn btn-secondary" style="width: 100%; text-align: center;">
+                    <a href="/shop" class="btn btn-secondary" style="width: 100%; text-align: center;">
                         Continuer mes achats
                     </a>
                     
-                    <form method="post" action="?page=cart&action=clear" style="margin-top: 0.5rem;">
+                    <form method="post" action="/cart?action=clear" style="margin-top: 0.5rem;">
                         <button type="submit" 
                                 style="background: none; border: none; color: #e74c3c; cursor: pointer; font-size: 0.875rem; width: 100%;"
                                 onclick="return confirm('Êtes-vous sûr de vouloir vider le panier ?')">

@@ -2,9 +2,9 @@
 <section class="hero">
     <div class="container">
         <h1>L'économie circulaire<br><span class="highlight">à portée de main</span></h1>
-        <p>Découvrez notre sélection d'objets réutilisés, reconditionnés et upcyclés. 
+        <p>Découvrez notre sélection d'objets réutilisés, reconditionnés. 
            Ensemble, construisons un avenir plus durable.</p>
-        <a href="?page=shop" class="btn">Découvrir la boutique</a>
+        <a href="/shop" class="btn">Découvrir la boutique</a>
     </div>
 </section>
 
@@ -57,6 +57,6 @@
     <div class="container">
         <h2>Rejoignez le mouvement</h2>
         <p>Chaque achat contribue à réduire les déchets et soutient l'économie locale</p>
-        <a href="?page=shop" class="btn btn-secondary">Commencer maintenant</a>
+        <a href="/shop" class="btn btn-secondary">Commencer maintenant</a>
     </div>
 </section>

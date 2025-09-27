@@ -35,7 +35,7 @@ class AdminController {
                 $_SESSION['admin_username'] = $username;
                 $_SESSION['success_message'] = "Connexion réussie ! Bienvenue dans l'espace administrateur.";
                 
-                header('Location: ?page=admin');
+                header('Location: /admin');
                 exit;
             } else {
                 $_SESSION['error_message'] = "Nom d'utilisateur ou mot de passe incorrect.";
@@ -43,7 +43,7 @@ class AdminController {
         }
         
         // Redirection vers la page admin
-        header('Location: ?page=admin');
+        header('Location: /admin');
         exit;
     }
     
@@ -54,7 +54,7 @@ class AdminController {
         
         $_SESSION['success_message'] = "Déconnexion réussie.";
         
-        header('Location: ?page=home');
+        header('Location: /home');
         exit;
     }
 }

@@ -9,7 +9,7 @@
             </div>
 
             <!-- Login Form -->
-            <form method="post" action="?page=admin&action=login">
+            <form method="post" action="/admin?action=login">
                 <!-- Username Field -->
                 <div class="form-group">
                     <label for="username" class="form-label">Nom d'utilisateur</label>
@@ -50,7 +50,7 @@
 
         <!-- Back to Home -->
         <div class="text-center mt-2">
-            <a href="?page=home" style="color: var(--primary-color); text-decoration: none;">
+            <a href="/home" style="color: var(--primary-color); text-decoration: none;">
                 ← Retour à l'accueil
             </a>
         </div>

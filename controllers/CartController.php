@@ -34,7 +34,7 @@ class CartController {
             }
         }
         
-        header('Location: ?page=cart');
+        header('Location: /cart');
         exit;
     }
     
@@ -51,7 +51,7 @@ class CartController {
             }
         }
         
-        header('Location: ?page=cart');
+        header('Location: /cart');
         exit;
     }
     
@@ -59,7 +59,7 @@ class CartController {
         Cart::clear();
         $_SESSION['success_message'] = "Panier vidé avec succès.";
         
-        header('Location: ?page=cart');
+        header('Location: /cart');
         exit;
     }
 }

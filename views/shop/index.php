@@ -9,7 +9,7 @@
         <!-- Filter -->
         <div class="filters">
             <?php foreach ($categories as $category): ?>
-            <a href="?page=shop&category=<?php echo urlencode($category); ?>" 
+            <a href="/shop?category=<?php echo urlencode($category); ?>" 
                class="filter-btn <?php echo $selectedCategory === $category ? 'active' : ''; ?>">
                 <?php echo $category; ?>
             </a>
@@ -34,7 +34,7 @@
                 <div class="card-footer">
                     <span class="card-price"><?php echo number_format($product->getPrice(), 2); ?>€</span>
                     
-                    <form method="post" action="?page=shop&action=add_to_cart" style="display: inline;">
+                    <form method="post" action="/shop?action=add_to_cart" style="display: inline;">
                         <input type="hidden" name="product_id" value="<?php echo $product->getId(); ?>">
                         <input type="hidden" name="quantity" value="1">
                         <button type="submit" class="btn btn-small">

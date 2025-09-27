@@ -71,7 +71,7 @@
                 <p>Configurez votre ressourcerie et vos préférences.</p>
                 <div style="margin-top: 1rem;">
                     <button class="btn btn-small" style="margin-right: 0.5rem;">Paramètres généraux</button>
-                    <form method="post" action="?page=admin&action=logout" style="display: inline;">
+                    <form method="post" action="?action=logout" style="display: inline;">
                         <button type="submit" class="btn btn-small" style="background: #e74c3c;">
                             Se déconnecter
                         </button>

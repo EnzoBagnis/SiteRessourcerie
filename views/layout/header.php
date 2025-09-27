@@ -38,18 +38,18 @@
 
                 <!-- Navigation -->
                 <nav class="nav">
-                    <a href="?page=home" class="nav-link <?php echo ($_GET['page'] ?? 'home') === 'home' ? 'active' : ''; ?>">
+                    <a href="/home" class="nav-link <?php echo ($_GET['page'] ?? 'home') === 'home' ? 'active' : ''; ?>">
                         Accueil
                     </a>
-                    <a href="?page=shop" class="nav-link <?php echo ($_GET['page'] ?? '') === 'shop' ? 'active' : ''; ?>">
+                    <a href="/shop" class="nav-link <?php echo ($_GET['page'] ?? '') === 'shop' ? 'active' : ''; ?>">
                         Boutique
                     </a>
-                    <a href="?page=admin" class="nav-link <?php echo ($_GET['page'] ?? '') === 'admin' ? 'active' : ''; ?>">
+                    <a href="/admin" class="nav-link <?php echo ($_GET['page'] ?? '') === 'admin' ? 'active' : ''; ?>">
                         Admin
                     </a>
                     
                     <!-- Cart Icon -->
-                    <a href="?page=cart" class="cart-icon">
+                    <a href="/cart" class="cart-icon">
                         🛒
                         <?php 
                         $totalItems = Cart::getTotalItems();

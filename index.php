@@ -4,8 +4,8 @@
  * Architecture MVC - Routeur principal
  */
 
- ini_set('display_errors', '0');
- 
+ini_set('display_errors', '0');
+
 // Démarrage de la session
 session_start();
 
@@ -30,13 +30,22 @@ spl_autoload_register(function ($class) {
     }
 });
 
-// Routage simple
-$page = $_GET['page'] ?? 'home';
-$action = $_GET['action'] ?? 'index';
-
 // Initialisation du panier en session
 if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = [];
+}
+
+// Analyse de l'URL (par exemple /shop?action=add_to_cart)
+$requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+$requestUri = trim($requestUri, '/');
+
+// Par défaut
+$page = 'home';
+$action = $_GET['action'] ?? 'index';
+
+if (!empty($requestUri)) {
+    $segments = explode('/', $requestUri);
+    $page = $segments[0]; // ex: "shop"
 }
 
 // Routage des pages
@@ -67,7 +76,7 @@ switch ($page) {
             $controller->index();
         }
         break;
-        
+
     case 'admin':
         $controller = new AdminController();
         if ($action === 'login') {
@@ -84,4 +93,3 @@ switch ($page) {
         $controller->index();
         break;
 }
-?>

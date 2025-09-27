@@ -1,5 +1,5 @@
 /**
- * JavaScript pour EcoRessource
+ * JavaScript pour Les Trouvailles de Vitrolles
  * Fonctionnalités d'amélioration de l'expérience utilisateur
  */
 

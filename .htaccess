@@ -18,7 +18,6 @@ Header set X-Content-Type-Options "nosniff"
 # Active les protections XSS (Cross-Site Scripting)
 Header set X-XSS-Protection "1; mode=block"
 
-Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
 
 # Autoriser uniquement l'accès à index.php et au dossier public/
 RewriteCond %{REQUEST_URI} ^/index\.php$ [OR]
@@ -30,6 +29,7 @@ RewriteEngine On
 # Réécriture pour index.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond ^- [L]
 RewriteRule ^ index.php [QSA,L]
 
 # Cache statique (CSS, JS, images)

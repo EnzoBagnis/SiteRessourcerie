@@ -36,7 +36,7 @@ class ShopController {
         }
         
         // Redirection vers la boutique
-        header('Location: ?page=shop');
+        header('Location: /shop');
         exit;
     }
 }
