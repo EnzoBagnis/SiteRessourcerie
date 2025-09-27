@@ -15,11 +15,13 @@ class AdminController {
             include VIEWS_PATH . '/layout/header.php';
             include VIEWS_PATH . '/admin/dashboard.php';
             include VIEWS_PATH . '/layout/footer.php';
+            include ROOT_PATH  . '/logs/AdminLogger.php';
         } else {
             // Affichage du formulaire de connexion
             include VIEWS_PATH . '/layout/header.php';
             include VIEWS_PATH . '/admin/login.php';
             include VIEWS_PATH . '/layout/footer.php';
+            include ROOT_PATH  . '/logs/AdminLogger.php'; 
         }
     }
     
@@ -28,6 +30,7 @@ class AdminController {
             $username = trim($_POST['username'] ?? '');;
             $password = trim($_POST['password'] ?? '');
 
+            $logger = new AdminLogger();
             
             // Validation simple (en production, utiliser un hachage sécurisé)
             if ($username === ADMIN_USERNAME && password_verify($password, ADMIN_PASSWORD_HASH)) {
@@ -35,10 +38,14 @@ class AdminController {
                 $_SESSION['admin_username'] = $username;
                 $_SESSION['success_message'] = "Connexion réussie ! Bienvenue dans l'espace administrateur.";
                 
+                
+                $logger->log($username, 'Connexion réussie ', $_SESSION['success_message']);
+
                 header('Location: /admin');
                 exit;
             } else {
                 $_SESSION['error_message'] = "Nom d'utilisateur ou mot de passe incorrect.";
+                $logger->log($username, 'Tentative incorrecte de connexion', $_SESSION['error_message'] );
             }
         }
         
@@ -48,11 +55,14 @@ class AdminController {
     }
     
     public function logout() {
+        $_SESSION['success_message'] = "Déconnexion réussie.";
+
+        $logger = new AdminLogger();
+        $logger->log($_SESSION['admin_username'], 'Deconnexion', $_SESSION['success_message']);
+
         // Nettoyage des variables de session admin
         unset($_SESSION['admin_logged_in']);
         unset($_SESSION['admin_username']);
-        
-        $_SESSION['success_message'] = "Déconnexion réussie.";
         
         header('Location: /home');
         exit;

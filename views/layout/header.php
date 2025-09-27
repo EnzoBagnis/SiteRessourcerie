@@ -38,13 +38,13 @@
 
                 <!-- Navigation -->
                 <nav class="nav">
-                    <a href="/home" class="nav-link <?php echo ($_GET['page'] ?? 'home') === 'home' ? 'active' : ''; ?>">
+                    <a href="/home" class="nav-link <?php echo ($_SESSION['PAGE'] ?? 'home') === 'home' ? 'active' : ''; ?>">
                         Accueil
                     </a>
-                    <a href="/shop" class="nav-link <?php echo ($_GET['page'] ?? '') === 'shop' ? 'active' : ''; ?>">
+                    <a href="/shop" class="nav-link <?php echo ($_SESSION['PAGE'] ?? '') === 'shop' ? 'active' : ''; ?>">
                         Boutique
                     </a>
-                    <a href="/admin" class="nav-link <?php echo ($_GET['page'] ?? '') === 'admin' ? 'active' : ''; ?>">
+                    <a href="/admin" class="nav-link <?php echo ($_SESSION['PAGE'] ?? '') === 'admin' ? 'active' : ''; ?>">
                         Admin
                     </a>
                     

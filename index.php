@@ -18,7 +18,8 @@ spl_autoload_register(function ($class) {
     $paths = [
         'models/',
         'controllers/',
-        'includes/'
+        'includes/',
+        'logs/'
     ];
     
     foreach ($paths as $path) {
@@ -35,26 +36,26 @@ if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = [];
 }
 
-// Analyse de l'URL (par exemple /shop?action=add_to_cart)
+// Analyse de l'URL
 $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $requestUri = trim($requestUri, '/');
 
 // Par défaut
-$page = 'home';
+$_SESSION['PAGE'] = 'home';
 $action = $_GET['action'] ?? 'index';
 
 if (!empty($requestUri)) {
     $segments = explode('/', $requestUri);
-    $page = $segments[0]; // ex: "shop"
+    $_SESSION['PAGE'] = $segments[0];
 }
 
 // Routage des pages
-switch ($page) {
+switch ($_SESSION['PAGE']) {
     case 'home':
         $controller = new HomeController();
         $controller->index();
         break;
-        
+
     case 'shop':
         $controller = new ShopController();
         if ($action === 'add_to_cart') {
