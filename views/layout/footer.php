@@ -45,6 +45,8 @@
                 <div>
                     <div id="ecoindex-badge"></div>
                     <script src="https://cdn.jsdelivr.net/gh/cnumr/ecoindex_badge@3/assets/js/ecoindex-badge.js" defer></script>
+                    <div id="wcb" class="carbonbadge"></div>
+                    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
                 </div>
             </div>
 
