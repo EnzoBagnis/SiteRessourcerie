@@ -55,33 +55,7 @@
 
     <!-- JavaScript optionnel pour les interactions -->
     <script>
-        // Simple JavaScript pour améliorer l'expérience utilisateur
-        document.addEventListener('DOMContentLoaded', function() {
-            // Auto-hide messages after 5 seconds
-            const messages = document.querySelectorAll('.message');
-            messages.forEach(function(message) {
-                setTimeout(function() {
-                    message.style.opacity = '0';
-                    setTimeout(function() {
-                        message.style.display = 'none';
-                    }, 300);
-                }, 5000);
-            });
-
-            // Smooth scroll for anchor links
-            const anchorLinks = document.querySelectorAll('a[href^="#"]');
-            anchorLinks.forEach(function(link) {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-        });
+        document.addEventListener("DOMContentLoaded",(function(){document.querySelectorAll(".message").forEach((function(e){setTimeout((function(){e.style.opacity="0",setTimeout((function(){e.style.display="none"}),300)}),5e3)}));document.querySelectorAll('a[href^="#"]').forEach((function(e){e.addEventListener("click",(function(e){e.preventDefault();const t=document.querySelector(this.getAttribute("href"));t&&t.scrollIntoView({behavior:"smooth"})}))}))}));
     </script>
 </body>
 </html>
