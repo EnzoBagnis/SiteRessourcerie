@@ -27,7 +27,7 @@ class AdminController {
     
     public function login() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $username = trim($_POST['username'] ?? '');;
+            $username = trim($_POST['username'] ?? '');
             $password = trim($_POST['password'] ?? '');
 
             $logger = new AdminLogger();

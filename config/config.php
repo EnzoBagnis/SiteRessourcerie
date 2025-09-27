@@ -4,7 +4,7 @@
  */
 
 // Configuration du site
-define('SITE_NAME', 'Les Trouvailles de Vitrolles');
+define('SITE_NAME', 'Les Trésors de Vitrolles');
 define('SITE_DESCRIPTION', 'Ressourcerie & Économie Circulaire');
 define('SITE_URL', 'http://localhost');
 
