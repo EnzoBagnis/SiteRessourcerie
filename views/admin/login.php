@@ -42,7 +42,7 @@
 
             <!-- Demo Credentials Info -->
             <div class="demo-credentials">
-                <h4>Identifiants de démonstration :</h4>
+                <h2>Identifiants de démonstration :</h2>
                 <p><strong>Utilisateur :</strong> admin<br>
                    <strong>Mot de passe :</strong> password123</p>
             </div>
@@ -50,7 +50,7 @@
 
         <!-- Back to Home -->
         <div class="text-center mt-2">
-            <a href="/home" style="color: var(--primary-color); text-decoration: none;">
+            <a href="/home" style="text-decoration: none;">
                 ← Retour à l'accueil
             </a>
         </div>

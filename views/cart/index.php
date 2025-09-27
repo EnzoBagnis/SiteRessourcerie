@@ -99,7 +99,7 @@
                     
                     <form method="post" action="/cart?action=clear" style="margin-top: 0.5rem;">
                         <button type="submit" 
-                                style="background: none; border: none; color: #e74c3c; cursor: pointer; font-size: 0.875rem; width: 100%;"
+                                style="background: none; border: none; color: #AA2213; cursor: pointer; font-size: 0.875rem; width: 100%;"
                                 onclick="return confirm('Êtes-vous sûr de vouloir vider le panier ?')">
                             Vider le panier
                         </button>

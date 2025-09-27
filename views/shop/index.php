@@ -2,7 +2,7 @@
     <div class="container">
         <!-- Header -->
         <div class="section-title">
-            <h1>Notre boutique</h1>
+            <h2>Notre boutique</h2>
             <p>Découvrez notre sélection d'objets de seconde main, reconditionnés avec soin</p>
         </div>
 
