@@ -1,5 +1,5 @@
 # Empêche l'exécution de scripts PHP dans certains dossiers sensibles
-<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|bak|inc|phps|fla|psd|sql|swp|git|env)$">
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|bak|inc|phps|fla|psd|sql|swp|git|env|views|public|controllers|config)$">
     Require all denied
 </FilesMatch>
 
@@ -19,17 +19,12 @@ Header set X-Content-Type-Options "nosniff"
 Header set X-XSS-Protection "1; mode=block"
 
 
-# Autoriser uniquement l'accès à index.php et au dossier public/
-RewriteCond %{REQUEST_URI} ^/index\.php$ [OR]
-RewriteCond %{REQUEST_URI} ^/public/ [NC,OR]
-
-# Réécriture d’URL
+# Active le moteur de réécriture
 RewriteEngine On
 
 # Réécriture pour index.php
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond ^- [L]
 RewriteRule ^ index.php [QSA,L]
 
 # Cache statique (CSS, JS, images)
