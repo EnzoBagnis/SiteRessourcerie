@@ -69,7 +69,6 @@ Les Trésors de Vitrolles est une application web de ressourcerie développée e
 - **Sessions PHP** : Gestion du panier et authentification
 
 
-
 ### Identifiants admin par défaut
 - **Utilisateur** : `admin`
 - **Mot de passe** : `password123`
@@ -88,6 +87,7 @@ L'application respecte les principes d'éco-conception :
 - Images externes via Unsplash (pas de stockage local)
 - Code PHP efficace avec faible empreinte mémoire
 - Absence de frameworks lourds
+- [Score LightHouse](https://pagespeed.web.dev/analysis/https-les-tresors-de-vitrolles-alwaysdata-net/3o2crdnrhv?form_factor=mobile) en moyenne de 98 sur tous les domaines
 
 ### Accessibilité
 - Structure HTML5 sémantique
@@ -107,21 +107,7 @@ L'application respecte les principes d'éco-conception :
 - Protection contre les injections XSS (`htmlspecialchars`)
 - Validation des données côté serveur
 - Sessions sécurisées pour l'authentification
-- Tokens CSRF (à implémenter pour la production)
-
-### Pour la production
-- Utiliser des mots de passe sécurisés et hachés
-- Implémenter HTTPS
-- Ajouter une base de données sécurisée
-- Mettre en place des logs d'audit
-
-
-### Fonctionnalités additionnelles
-- Système de commandes complet
-- Gestion des utilisateurs clients
-- Interface d'administration complète
-- API REST pour mobile
-- Système de newsletter éco-responsable
+- [Score de 110/100](https://developer.mozilla.org/en-US/observatory/analyze?host=les-tresors-de-vitrolles.alwaysdata.net) soit A+ sur HTTP Observatory Report
 
 ## Maintenance
 

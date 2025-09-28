@@ -39,13 +39,6 @@
                     Se connecter
                 </button>
             </form>
-
-            <!-- Demo Credentials Info -->
-            <div class="demo-credentials">
-                <h2>Identifiants de démonstration :</h2>
-                <p><strong>Utilisateur :</strong> admin<br>
-                   <strong>Mot de passe :</strong> password123</p>
-            </div>
         </div>
 
         <!-- Back to Home -->
