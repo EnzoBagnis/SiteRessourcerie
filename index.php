@@ -18,6 +18,9 @@ session_set_cookie_params([
 // Démarrage de la session
 session_start();
 
+$_SESSION['nonce'] = base64_encode(random_bytes(16));
+header("Content-Security-Policy: script-src 'self' 'nonce-{$_SESSION['nonce']}';");
+
 // Configuration
 require_once 'config/config.php';
 require_once 'config/database.php';
