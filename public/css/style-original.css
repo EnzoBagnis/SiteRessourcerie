@@ -110,7 +110,7 @@
   
   .nav-link:hover,
   .nav-link.active {
-    color: var(--primary-color);
+    color: var(--text-dark);
     background: rgba(26, 188, 156, 0.1);
   }
   
