@@ -6,9 +6,6 @@
 # Bloque l'accès aux fichiers cachés (ex : .env, .git, etc.)
 RedirectMatch 403 /\..*$
 
-# Protection contre le clickjacking
-Header always append X-Frame-Options "SAMEORIGIN"
-
 # Empêche le chargement de ton site dans un iframe sur un autre domaine
 Header always set X-Frame-Options "DENY"
 
@@ -20,16 +17,7 @@ Header set X-XSS-Protection "1; mode=block"
 
 # Politique CSP sécurisée
 <IfModule mod_headers.c>
-  Header set Content-Security-Policy "
-    default-src 'self';
-    script-src 'self' https://cdn.jsdelivr.net https://unpkg.com;
-    connect-src 'self' https://api.websitecarbon.com https://bff.ecoindex.fr;
-    img-src 'self' data:;
-    style-src 'self' 'unsafe-inline';
-    object-src 'none';
-    base-uri 'self';
-    frame-ancestors 'none';
-  "
+  Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://unpkg.com; connect-src 'self' https://api.websitecarbon.com https://bff.ecoindex.fr; img-src 'self' data:; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'self'; frame-ancestors 'none';"
   Header set Referrer-Policy "strict-origin-when-cross-origin"
   # HSTS
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
