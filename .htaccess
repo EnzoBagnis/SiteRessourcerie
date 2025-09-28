@@ -18,6 +18,11 @@ Header set X-Content-Type-Options "nosniff"
 # Active les protections XSS (Cross-Site Scripting)
 Header set X-XSS-Protection "1; mode=block"
 
+# Politique CSP sécurisée
+<IfModule mod_headers.c>
+Header set Content-Security-Policy "default-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none';"
+</IfModule>
+
 
 # Active le moteur de réécriture
 RewriteEngine On

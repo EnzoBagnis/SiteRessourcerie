@@ -6,6 +6,15 @@
 
 ini_set('display_errors', '0');
 
+
+session_set_cookie_params([
+    'lifetime' => 0,
+    'path'     => '/',
+    'secure'   => true,
+    'httponly' => true,
+    'samesite' => 'Strict'
+]);
+
 // Démarrage de la session
 session_start();
 
