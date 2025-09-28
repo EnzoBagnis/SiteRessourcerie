@@ -9,7 +9,7 @@ RedirectMatch 403 /\..*$
 # Empêche le chargement de ton site dans un iframe sur un autre domaine
 Header always set X-Frame-Options "DENY"
 
-# Empêche l’exécution de scripts malveillants via MIME sniffing
+# Empêche l'exécution de scripts malveillants via MIME sniffing
 Header set X-Content-Type-Options "nosniff"
 
 # Active les protections XSS (Cross-Site Scripting)
@@ -17,13 +17,10 @@ Header set X-XSS-Protection "1; mode=block"
 
 # Politique CSP sécurisée
 <IfModule mod_headers.c>
-  Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://unpkg.com; connect-src 'self' https://api.websitecarbon.com https://bff.ecoindex.fr; img-src 'self' data:; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'self'; frame-ancestors 'none';"
   Header set Referrer-Policy "strict-origin-when-cross-origin"
   # HSTS
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
 </IfModule>
-
-
 
 # Active le moteur de réécriture
 RewriteEngine On
@@ -37,7 +34,6 @@ RewriteRule ^ index.php [QSA,L]
 <FilesMatch "\.(html|css|js|png|jpg|jpeg|gif|svg)$">
     Header set Cache-Control "max-age=2629800, public"
 </FilesMatch>
-
 
 # Bloque les requêtes avec certains caractères dangereux
 SetEnvIf Request_URI "(\.php\?|\.\.\/|\~|\'|\<|\>|\<script|eval\()" bad_request

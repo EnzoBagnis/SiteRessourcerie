@@ -19,7 +19,16 @@ session_set_cookie_params([
 session_start();
 
 $_SESSION['nonce'] = base64_encode(random_bytes(16));
-header("Content-Security-Policy: script-src 'self' 'nonce-{$_SESSION['nonce']}';");
+$csp = "default-src 'self'; " .
+"script-src 'self' https://cdn.jsdelivr.net https://unpkg.com 'nonce-{$_SESSION['nonce']}'; " .
+"connect-src 'self' https://api.websitecarbon.com https://bff.ecoindex.fr; " .
+"img-src 'self' data:; " .
+"style-src 'self' 'unsafe-inline'; " .
+"object-src 'none'; " .
+"base-uri 'self'; " .
+"frame-ancestors 'none';";
+
+header("Content-Security-Policy: " . $csp);
 
 // Configuration
 require_once 'config/config.php';
