@@ -44,9 +44,9 @@
 
                 <div>
                     <div id="ecoindex-badge"></div>
-                    <script src="https://cdn.jsdelivr.net/gh/cnumr/ecoindex_badge@3/assets/js/ecoindex-badge.js" defer></script>
+                    <script src="https://cdn.jsdelivr.net/gh/cnumr/ecoindex_badge@3/assets/js/ecoindex-badge.js" integrity="sha384-uzG8a1AszF3mbui4HxpNQ/1DwW4XQAEhj/C4lTmS2zTDrnz2bIDxG00A6rf7e62S" crossorigin="anonymous" defer></script>
                     <div id="wcb" class="carbonbadge"></div>
-                    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+                    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" integrety="sha384-5Sivu2UajgUNg6Sxu3UHsZKjZlq9v6/slTAhA0/s21XcfNcrkSZRRO9K/0Cg14iP" crossorigin="anonymous" defer></script>
                 </div>
             </div>
 
