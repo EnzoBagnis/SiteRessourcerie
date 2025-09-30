@@ -6,7 +6,7 @@
                 <!-- Coordonnées -->
                 <div class="footer-section">
                     <h3>Nous contacter</h3>
-                    <p>📍 123 Rue de l'Économie Circulaire<br>75000 Paris</p>
+                    <p>📍 Zone des Estroublans<br>13127 Vitrolles</p>
                     <p>📞 01 23 45 67 89</p>
                     <p>✉️ contact@Les-trésors-de-Vitrolles.fr</p>
                 </div>
