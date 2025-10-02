@@ -18,8 +18,9 @@
     <meta property="og:site_name" content="EcoRessource">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%231abc9c'%3E%3Cpath%20d='M12%202L13.5%208.5L20%2010L13.5%2011.5L12%2018L10.5%2011.5L4%2010L10.5%208.5L12%202Z'/%3E%3C/svg%3E">
-    
+    <link rel="icon" type="image/svg+xml" href="public/images/logo.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="public/images/logo.ico">
+
     <!-- CSS -->
     <link rel="stylesheet" href="public/css/style.css">
 </head>
@@ -29,7 +30,9 @@
             <div class="header-content">
                 <!-- Logo -->
                 <a href="/" class="logo">
-                    <div class="logo-icon">🍃</div>
+                    <div class="logo-icon">
+                        <img src="public/images/logo.ico" alt="Logo EcoRessource" width="48" height="48">
+                    </div>
                     <div class="logo-text">
                         <h1>Les Trésors de Vitrolles</h1>
                         <p>Réemploi & Économie Circulaire</p>
