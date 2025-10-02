@@ -2,8 +2,7 @@
 <section class="hero">
     <div class="container">
         <h1>L'économie circulaire<br><span class="highlight">à portée de main</span></h1>
-        <p>Découvrez notre sélection d'objets réutilisés, reconditionnés. 
-           Ensemble, construisons un avenir plus durable.</p>
+        <p>Donner une seconde vie, inventer un nouveau monde.</p>
         <a href="/shop" class="btn">Découvrir la boutique</a>
     </div>
 </section>
