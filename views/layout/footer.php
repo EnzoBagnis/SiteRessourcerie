@@ -32,16 +32,6 @@
                     </ul>
                 </div>
 
-                <!-- Réseaux sociaux -->
-                <div class="footer-section">
-                    <h3>Suivez-nous</h3>
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
-                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
-                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
-                    </div>
-                </div>
-
                 <div>
                     <div id="ecoindex-badge"></div>
                     <script nonce="<?= $_SESSION['nonce'] ?>" src="https://cdn.jsdelivr.net/gh/cnumr/ecoindex_badge@3/assets/js/ecoindex-badge.js" integrity="sha384-uzG8a1AszF3mbui4HxpNQ/1DwW4XQAEhj/C4lTmS2zTDrnz2bIDxG00A6rf7e62S" crossorigin="anonymous" defer></script>
