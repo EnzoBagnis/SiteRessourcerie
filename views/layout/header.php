@@ -31,7 +31,7 @@
                 <!-- Logo -->
                 <a href="/" class="logo">
                     <div class="logo-icon">
-                        <img src="public/images/logo.ico" alt="Logo EcoRessource" width="48" height="48">
+                        <img src="public/images/logo.webp" alt="Logo EcoRessource" width="48" height="48">
                     </div>
                     <div class="logo-text">
                         <h1>Les Trésors de Vitrolles</h1>
