@@ -8,7 +8,7 @@ class HomeController {
     public function index() {
         // Données pour la page d'accueil
         $pageTitle = "Accueil - " . SITE_NAME;
-        $pageDescription = "L'économie circulaire à portée de main";
+        $pageDescription = "Donner une seconde vie, Inventer un nouveau monde. ";
         
         // Catégories principales
         $categories = [
