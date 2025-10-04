@@ -1,8 +1,9 @@
 <!-- Hero Section -->
 <section class="hero">
     <div class="container">
-        <h1>L'économie circulaire<br><span class="highlight">à portée de main</span></h1>
-        <p>Donner une seconde vie, inventer un nouveau monde.</p>
+        <h1>Donner une seconde vie,<br><span class="highlight">Inventer un nouveau monde</span></h1>
+        <p>Découvrez notre sélection d'objets réutilisés, reconditionnés. 
+        Ensemble, construisons un avenir plus durable.</p>
         <a href="/shop" class="btn">Découvrir la boutique</a>
     </div>
 </section>
