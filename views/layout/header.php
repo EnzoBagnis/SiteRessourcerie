@@ -6,7 +6,7 @@
     <title><?php echo $pageTitle ?? 'EcoRessource - Ressourcerie & Économie Circulaire'; ?></title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="<?php echo $pageDescription ?? 'Découvrez notre sélection d\'objets de seconde main reconditionnés. Vêtements, électroménager, meubles et vaisselle vintage. Économie circulaire et développement durable.'; ?>">
+    <meta name="description" content="<?php echo $pageDescription?> Découvrez notre sélection d' objets de seconde main reconditionnés. Vêtements, électroménager, meubles et vaisselle vintage. Économie circulaire et développement durable.">
     <meta name="keywords" content="ressourcerie, économie circulaire, seconde main, vintage, reconditionnement, upcycling, développement durable">
     <meta name="author" content="EcoRessource">
     
